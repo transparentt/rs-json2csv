@@ -9,8 +9,10 @@ fn main() {
     let output = &args[2];
     
     let mut b = String::new();
+    
     let mut f = File::open(input).expect("file not found");
     f.read_to_string(&mut b).expect("something went wrong reading the file");
+
     let contents: Value = serde_json::from_str(&b).unwrap();
     
     let mut writer = csv::Writer::from_path(output).unwrap();
