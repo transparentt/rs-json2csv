@@ -20,15 +20,17 @@ fn main() {
         if i == 0 {
             let mut row = vec![];
             for (key,_) in content.as_object().unwrap().iter() {
-                row.push(key.to_string());
+                row.push(key.as_str());
             } 
             writer.write_record(&row).expect("can not write record");
         }
 
         let mut row = vec![];
         for (_,value) in content.as_object().unwrap().iter() {
-            row.push(value.to_string());
+            row.push(value.as_str().unwrap());
+
         } 
+
         writer.write_record(row).expect("can not write record");
     }
 
