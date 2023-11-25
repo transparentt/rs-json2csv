@@ -1,13 +1,8 @@
-use std::env;
 use std::fs::File;
 use std::io::Read;
 use serde_json::Value;
 
-fn main() {
-    let args: Vec<String> = env::args().collect();
-    let input = &args[1];
-    let output = &args[2];
-    
+pub fn json2csv(input: String, output:String) {
     let mut b = String::new();
     
     let mut f = File::open(input).expect("file not found");
