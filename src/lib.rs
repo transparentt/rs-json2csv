@@ -2,7 +2,7 @@ use std::fs::File;
 use std::io::Read;
 use serde_json::Value;
 
-pub fn json2csv(input: String, output:String) {
+pub fn json2csv(input: &str, output:&str) {
     let mut b = String::new();
     
     let mut f = File::open(input).expect("file not found");
