@@ -2,7 +2,7 @@
 name = "rs_json2csv"
 version = "0.1.0"
 edition = "2021"
-authors = ["transparentt <transparentt@example.com>"]
+authors = ["transparentt <sait00@icloud.com>"]
 license = "MIT"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
