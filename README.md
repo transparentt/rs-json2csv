@@ -6,7 +6,7 @@ Convert JSON to CSV in Rust.
 
 ```
 [dependencies]
-rs_json2csv = {git = "https://github.com/transparentt/rs-json2csv.git"}
+rs_json2csv = "0.1.0"
 ```
 
 ```rust
